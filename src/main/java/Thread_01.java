@@ -9,17 +9,17 @@ public class Thread_01 {
             public void run() {
                 System.out.println("thread run...");
                 try {
-                    Thread.sleep(10);
+                    Thread.sleep(10000);
                 } catch (InterruptedException e) {}
                 System.out.println("thread end.");
             }
         };
         t.start();
-        try {
-            t.join();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            t.join();
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
 //        try {
 //            Thread.sleep(20);
 //        } catch (InterruptedException e) {}
